@@ -1,0 +1,34 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+}
+input{
+    padding:15px;
+    border:none;
+    border-radius:1px;
+    float:left;
+    display:grid;
+    grid-template-columns:1fr auto;
+    text-align:end;
+    align-items:end;
+    margin-bottom:0;
+
+}
+
+button{
+    grid-column:2;
+    position:relative;
+    width:150px;
+    min-height:20px;
+    text-align:center;
+    float:left;
+    padding:15px;
+    margin-bottom:0;
+    font-weight:bold;
+    border:none;
+    background:orangered;
+    color:white;
+    border-radius: 2px;
+}
+

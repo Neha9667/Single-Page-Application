@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container_class{
+  width:50%;
+  float:left;
+  height:400px;
+  gap:20px;
+}
+.Container{
+  gap:30px;
+  margin-top:50px;
+  margin-bottom:0;
+  padding:15px;
+}
+.hero_section p{
+  font-size: 40px;
+  margin:15px;
+
+}
+.text p{
+  font-size:25px;
+  margin:15px;
+}
+section{
+  width:50%;
+  float:right;
+  height:400px;
+  margin-top:50px;
+}
+.work {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    max-width: 1200px;
+    margin: 25px auto;
+  }
+
+  .grid_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .image_container{
+    display:flex;
+    margin:5px;
+    justify-content:space-between;
+    
+  }
+  .card {
+    margin:10px;
+    padding:2px;
+    max-width:200px;
+    height: 180px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.3);
+    background-color: #102C57;
+    
+  }
+  .card:hover {
+    transform: scale(1.04);
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.3);
+    
+  }
+
+
+  /*Media queries*/
+
+  @media(min-width:1200px){
+.Container{
+height:auto;
+}
+
+.hero_section{
+  height:auto;
+}
+.text p{
+  font-size:25px;
+
+}
+.work{
+  height:auto;
+}
+.grid_item{
+  height:auto;
+}
+.card{
+  height:auto;
+}
+.image_container{
+  height:auto;
+}
+  }
+
+  @media(max-width:1080px){
+    .Container{
+      height:auto;
+    }
+    .hero_section{
+      height:auto;
+    }
+    .text p{
+      font-size:25px;
+    
+    }
+    .work{
+      height:auto;
+    }
+
+  }
+  @media(max-width:720px){
+    .Container{
+      height:80vh;
+      width:80vw;
+    }
+  }
+  @media(max-width:635px){
+    .Container::before{
+      display:none;
+      margin:0;
+      padding:0;
+      
+    }
+    .hero_section{
+      display:none;
+    }
+    .text p{
+      display:none;
+    
+    }
+    .work{
+      margin:0px;
+      padding:0px;
+    }
+  }
+ 
+  
+
+ 
